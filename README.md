@@ -11,14 +11,14 @@ A deep learning-based malaria detection system using ResNet50 and Grad-CAM expla
 
 ## 🛠️ Built With
 
-- [PyTorch](https://pytorch.org/) 
-- [Streamlit](https://streamlit.io/) 
-- [Grad-CAM](https://arxiv.org/abs/1610.02391) 
-- [ResNet50](https://pytorch.org/vision/stable/models.html) 
+- [PyTorch](https://pytorch.org/)
+- [Streamlit](https://streamlit.io/)
+- [Grad-CAM](https://arxiv.org/abs/1610.02391)
+- [ResNet50](https://pytorch.org/vision/stable/models.html)
 
 ## 📦 Dataset
 
-Uses the [Malaria Cell Images Dataset](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria) 
+Uses the [Malaria Cell Images Dataset](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria)
 
 ## 📁 Folder Structure
 
@@ -27,13 +27,16 @@ data/cell_images/
 ├── Parasitized/
 └── Uninfected/
 
+## Here's a quick preview of the app in action:
 
-## 📷 Example Output
-
-![Example Grad-CAM Output](image.png)
+![Malaria Classifier Demo](demo.gif)
 
 ## 🧪 Usage
 
-### Train the Model
+## 🛠️ Requirements
+
+Install dependencies:
+
 ```bash
-python notebooks/train.py
+pip install torch torchvision streamlit opencv-python matplotlib scikit-learn
+```

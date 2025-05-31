@@ -5,6 +5,12 @@ from PIL import Image
 import numpy as np
 import warnings
 import torch.nn.functional as F
+# Add root to PYTHONPATH
+import sys
+from pathlib import Path
+
+# Add root directory to Python path
+sys.path.append(str(Path(__file__).parent.parent))
 
 # Avoid OMP error from PyTorch/OpenCV
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
@@ -13,8 +19,8 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 warnings.filterwarnings("ignore", category=UserWarning)
 
 # Import custom modules
-from models.resnet_model import MalariaResNet50
-from gradcam import visualize_gradcam
+from models.resnet_model import MalariaResNet50 
+from gradcam.gradcam import visualize_gradcam
 
 
 # -----------------------------

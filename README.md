@@ -24,8 +24,8 @@ Uses the [Malaria Cell Images Dataset](https://www.kaggle.com/iarunava/cell-imag
 
 Place raw images in:
 data/cell_images/
-├── Parasitized/
-└── Uninfected/
+    ├── Parasitized/
+    └── Uninfected/
 
 ## Here's a quick preview of the app in action:
 
